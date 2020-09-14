@@ -93,7 +93,6 @@ public class Server {
                 br = new BufferedReader(isr);
                 // 2 read
                 while(Server.containSocket(this.socket)){
-                    System.out.println("br = " + br);
                     String message = br.readLine();
                     if(message == null){
                         break;
