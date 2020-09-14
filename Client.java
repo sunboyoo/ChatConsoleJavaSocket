@@ -62,7 +62,6 @@ public class Client {
 
         @Override
         public void run() {
-            System.out.println("a thread ReceiveMessageFromServer is running...");
             InputStream is = null;
             InputStreamReader isr = null;
             BufferedReader br = null;
@@ -82,7 +81,6 @@ public class Client {
                 MyIO.close(br);
                 MyIO.close(isr);
                 MyIO.close(is);
-                System.out.println("The thread ReceiveMessageFromServer is closed.");
             }
         }
     }
